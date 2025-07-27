@@ -1,0 +1,68 @@
+body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background: #3498db;
+      margin: 8px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      max-width: 800px;
+    }
+
+    .box {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+
+    .box.active {
+      opacity: 1;
+      transform: scale(1.4);
+    }
+
+    /* Timing variations */
+    .linear {
+      transition: all 0.6s linear;
+    }
+
+    .ease {
+      transition: all 0.6s ease;
+    }
+
+    .ease-in {
+      transition: all 0.6s ease-in;
+    }
+
+    .ease-out {
+      transition: all 0.6s ease-out;
+    }
+
+    .ease-in-out {
+      transition: all 0.6s ease-in-out;
+    }
+
+    .bezier {
+      transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .steps {
+      transition: all 1s steps(4, end);
+    }
